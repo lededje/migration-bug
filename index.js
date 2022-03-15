@@ -63,11 +63,7 @@ Tags.init({
     autoIncrement: true,
     primaryKey: true,
   },
-  type: DataTypes.ENUM(
-    'NEW',
-    'ORIGINAL',
-    'DUPLICATE',
-  ),
+  type: DataTypes.STRING,
 }, { sequelize, modelName: 'tags' });
 
 (async () => {
